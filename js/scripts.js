@@ -1,17 +1,16 @@
-// function determineResult(val1, val2, val3, val4, val5, val6) {
-//   const quizTotal = val1 + val2 + val3 + val4 + val5 +val6; 
-//   let result;
+function determineResult(val1, val2, val3, val4, val5,) {
+  const quizTotal = val1 + val2 + val3 + val4 + val5; 
+  let result;
 
-//   if () {
-//     result = "Python";
-//   } else if () {
-//     result= "Ruby";
-//   } else if() {
-//     result = "C#";
-//   } else {
-//     result = "JavaScript";
-//   }
-// }
+  if (quizTotal <= 7) {
+    result = "Ruby";
+  } else if (quizTotal <= 12) {
+    result= "Python";
+  } else {
+    result = "JavaScript";
+  }
+  return result;
+}
 
 $(document).ready(function() {
 
@@ -28,12 +27,21 @@ $(document).ready(function() {
     $("#questions").hide();
     $("form").show();
     } else {
-      alert("Your journey awaits! Please enter your name.")
+      alert("Your journey awaits! Please enter your name.");
     }
   });
 
   $("form").submit(function(event) {
     event.preventDefault();
+    const val1 = $("input:radio[name=flower]:checked").val();
+    const val2 = $("input:radio[name=genre]:checked").val();
+    const val3 = $("input:radio[name=day]:checked").val();
+    const val4 = $("input:radio[name=dancing]:checked").val();
+    const val5 = $("input:radio[name=familiar]:checked").val();
+    const name = $("input#name").val();
+    let languageResult = determineResult(val1, val2, val3, val4, val5);
+    $(".name").text(name);
+    $("#languageResult").text(languageResult);
     $(".showLater").hide();
     $("#intro").hide();
     $("#results").show();
@@ -55,4 +63,3 @@ $(document).ready(function() {
 
 });
 
-// const color = $("input:radio[name=color]:checked").val();
