@@ -55,6 +55,12 @@ $(document).ready(function() {
     $("#celebrate").show();
   });
 
+  $("#continue4").click(function(event) {
+    event.preventDefault();
+    $(".showLater").hide();
+    $("#intro").show();
+  });
+
   $("#badResult").click(function(event) {
     event.preventDefault();
     $(".showLater").hide();
