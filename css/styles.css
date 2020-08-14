@@ -6,7 +6,7 @@ h1, h4, h5, p{
   text-align: center;
 }
 
-#continue1 {
+#continue1, #continue2 {
   width: 30%;
   margin-left: 33%;
   margin-right: 33%;

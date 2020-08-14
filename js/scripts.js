@@ -14,10 +14,24 @@
 // }
 
 $(document).ready(function() {
+
   $("#continue1").click(function(event) {
     event.preventDefault();
     $("#intro").hide();
     $("#questions").show();
+  });
+
+  $("#continue2").click(function(event) {
+    event.preventDefault();
+    $("#questions").hide();
+    $("form").show();
+  });
+
+  $("form").submit(function(event) {
+    event.preventDefault();
+    $(".showLater").hide();
+    $("#intro").hide();
+    $("#results").show();
   });
 
 });
