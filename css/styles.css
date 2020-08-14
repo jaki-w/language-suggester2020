@@ -53,3 +53,10 @@ h1, h2, h4, h5, p {
 .purple-background {
   background-color: purple;
 }
+
+#emerald {
+  display: none;
+  background-image: url("/img/emerald.png");
+  background-color: goldenrod;
+  padding: 60px;
+}

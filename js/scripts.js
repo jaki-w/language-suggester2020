@@ -49,6 +49,10 @@ $(document).ready(function() {
 
   $("#goodResult").click(function(event) {
     event.preventDefault();
+
+    $(".showLater").hide();
+    $("#intro").hide();
+
     const reward = $("input:radio[name=reward]:checked").val();
     if (reward === "coins") {
       $("body").addClass("coin-background");
@@ -57,6 +61,7 @@ $(document).ready(function() {
     }
 
     const color = $("input:radio[name=color]:checked").val();
+
     if (color === "pink") {
       $("#celebrate").addClass("pink-background");
     } else if (color === "green") {
@@ -67,9 +72,9 @@ $(document).ready(function() {
       $("#celebrate").addClass("purple-background");
     }
 
-    $(".showLater").hide();
-    $("#intro").hide();
+    $("#emerald").show();
     $("#celebrate").show();
+    $("#continue4").show();
   });
 
   $("#continue4").click(function(event) {
