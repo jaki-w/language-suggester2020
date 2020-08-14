@@ -33,13 +33,14 @@ $(document).ready(function() {
 
   $("form").submit(function(event) {
     event.preventDefault();
-    const val1 = $("input:radio[name=flower]:checked").val();
-    const val2 = $("input:radio[name=genre]:checked").val();
-    const val3 = $("input:radio[name=day]:checked").val();
-    const val4 = $("input:radio[name=dancing]:checked").val();
-    const val5 = $("input:radio[name=familiar]:checked").val();
+    const val1 = parseInt($("input:radio[name=flower]:checked").val());
+    const val2 = parseInt($("input:radio[name=genre]:checked").val());
+    const val3 = parseInt($("input:radio[name=day]:checked").val());
+    const val4 = parseInt($("input:radio[name=dancing]:checked").val());
+    const val5 = parseInt($("input:radio[name=familiar]:checked").val());
     const name = $("input#name").val();
     let languageResult = determineResult(val1, val2, val3, val4, val5);
+    console.log(val1+val2+val3+val4+val5);
     $(".name").text(name);
     $("#languageResult").text(languageResult);
     $(".showLater").hide();
