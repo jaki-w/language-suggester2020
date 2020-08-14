@@ -76,7 +76,6 @@ $(document).ready(function() {
       $(".jumbotron").addClass("purple-background");
     }
 
-    $("#emerald").show();
     $("#celebrate").show();
     $("#continue4").show();
   });
@@ -92,9 +91,10 @@ $(document).ready(function() {
 
   $("#badResult").click(function(event) {
     event.preventDefault();
-    $(".showLater").hide();
+    $(".jumbotron").addClass("original-background");
     $("#intro").show();
     $("#retry").text("Oh, no! Your quest went awry :( Never fear! Repeat your quest here :)");
+    $(".showLater").hide();
   });
 
 });

@@ -13,8 +13,10 @@
     <div id="intro">
       <h2 id="retry"></h2>
       <h4>Curious to know which programming language suits you? </h4>
-      <p>A human is only as strong as the programming language they learn. <em>Just kidding!</em> This quiz is just for <strong>fun</strong>!</p>
-      <h5>Have I piqued your interest? Press the button below to continue on your journey!</h5>
+      <div id="introParagraphs">
+        <p>A human is only as strong as the programming language they learn. <em>Just kidding!</em> This quiz is just for <strong>fun</strong>!</p>
+        <p>Have I piqued your interest? Press the button below to continue on your journey!</p>
+      </div>
       <button id="continue1">Continue</button>
     </div><!--intro-->
 
@@ -57,7 +59,7 @@
       <button id="continue2">That was weird...continue</button>
     </div><!--questions-->
 
-    <form class="showLater">
+    <form class="showLater" id="mainQuiz">
       <div class="quizQuestion">
         <p class="alignLeft">Which flower do you like best?</p>
         <div class="radio">
@@ -144,9 +146,9 @@
     <div id="results" class="showLater">
       <p id="personalizedResult"><span class="name"></span>, you should learn <span class="languageResult"></span>!</p>
       <img id="padlock" src="img/padlock.jpg" alt="A handrawn rustic padlock and inserted key hanging from chain. Image by rawpixel.com">
-      <p>Quest complete! Or is it? Kindly accept or reject your results...and remember, a question is ultimately a <em>quest</em> for knowledge. Good luck on your tech journey!</p>
+      <p id="questMessage">Quest complete! Or is it? Kindly accept or reject your results...and remember, a question is ultimately a <em>quest</em> for knowledge. Good luck on your tech journey!</p>
 
-      <div class="row">
+      <div class="row" id="resultButtons">
         <button id="goodResult">Accept</button>
         <button id="badResult">Reject</button>
       </div><!--row-->

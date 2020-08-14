@@ -6,30 +6,63 @@ body {
 
 .jumbotron {
   background-color: #72587F;
+  margin-bottom: 40px;
 }
 .showLater {
   display: none;
 }
 
-h1, h2, h4, h5, p {
+h1, h2, h3, h4, h5, p {
   text-align: center;
 }
 
 button {
+  background-color:#ed9121;
   color:black;
 }
+
 .leftAlign {
   text-align: left;
+}
+
+#introParagraphs {
+  border: solid #72587F;
+  border-width: 2px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#questMessage {
+  border: solid #72587F;
+  border-width: 2px;
+  padding: 20px;
 }
 
 #retry {
   background-color: aquamarine;
 }
 
-#continue1, #continue2 {
+#continue1, #continue2, #continue3, #continue4 {
   width: 30%;
   margin-left: 33%;
   margin-right: 33%;
+  margin-top: 20px;
+}
+
+#mainQuiz {
+  border: solid #72587F;
+  border-width: 2px;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+#resultButtons {
+  width: 40%;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 20px;
 }
 
 #coinImage1 {
@@ -52,18 +85,27 @@ button {
 
 .pink-background {
   background-color: pink;
+  color: black;
 }
 
 .green-background {
   background-color: chartreuse;
+  color: black;
 }
 
 .blue-background {
   background-color: blue;
+  color: black;
 }
 
 .purple-background {
   background-color: purple;
+  color: black;
+}
+
+.original-background {
+  background-color: #72587F;
+  margin-bottom: 40px;
 }
 
 #emerald {
@@ -87,4 +129,12 @@ button {
   margin-left: 400px;
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+#questionForm {
+  border: solid #72587F;
+  border-width: 2px;
+  padding: 20px;
+  margin: 40px;
+  margin-top: 10px;
 }
