@@ -19,7 +19,41 @@
     </div><!--intro-->
 
     <div class="showLater" id="questions">
-      <p>Welcome! Just a few questions before we get started...</p>
+      <h3>Welcome! Just a few questions before we get started...</h3>
+      <br><br>
+      <form id="questionForm">
+        <div class="form-group">
+          <p>Hello! You need a name to continue this quest...which will you choose?</p><br>
+          <Label for="name">Name of choice:</Label>
+          <input id="name" type="text" class="form-control">
+        </div>
+        <p class="alignLeft">Which color do you like the most?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="pink" checked>Pink</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="green">Green</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="purple">Purple</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="color" value="blue">Blue</label>
+        </div>
+        <p class="alignLeft">Which reward do you covet most?</p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="reward" value="confetti" checked>Confetti</label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="reward" value="coins" ></label>
+        </div>
+      </form>
       <button id="continue2">That was weird...continue</button>
     </div><!--questions-->
 
