@@ -51,19 +51,19 @@ $(document).ready(function() {
     event.preventDefault();
     $(".showLater").hide();
     $("#intro").hide();
-    const reward = $("input:radio[name=reward]:checked").val();
-    console.log(reward);
-    if (reward === "coins") {
-      $("#twoStacks").show();
-    } else {
-      $("#confetti").show();
-    }
     $("#celebrate").show();
+    const reward = $("input:radio[name=reward]:checked").val();
+    if (reward === "coins") {
+      $("body").addClass("coin-background");
+    } else {
+      $("body").addClass("confetti-background");
+    }
   });
 
   $("#continue4").click(function(event) {
     event.preventDefault();
     $(".showLater").hide();
+    $("body").removeClass();
     $("#intro").show();
   });
 
