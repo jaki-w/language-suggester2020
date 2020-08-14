@@ -1,12 +1,12 @@
 .showLater {
-  display:none;
+  display: none;
 }
 
 h1, h2, h4, h5, p {
   text-align: center;
 }
 
-.alignLeft {
+.leftAlign {
   text-align: left;
 }
 
@@ -18,4 +18,12 @@ h1, h2, h4, h5, p {
   width: 30%;
   margin-left: 33%;
   margin-right: 33%;
+}
+
+#coinImage1 {
+  margin-right: 100px;
+}
+
+#coinImage2 {
+  margin-left: 100px;
 }
