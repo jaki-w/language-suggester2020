@@ -72,3 +72,19 @@ button {
   background-color: goldenrod;
   padding: 60px;
 }
+
+#retry {
+  color: black;
+}
+
+#personalizedResult {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#padlock {
+  margin-right: 400px;
+  margin-left: 400px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
