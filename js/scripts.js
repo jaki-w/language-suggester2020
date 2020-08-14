@@ -23,8 +23,13 @@ $(document).ready(function() {
 
   $("#continue2").click(function(event) {
     event.preventDefault();
+    const name = $("input#name").val();
+    if (name) {
     $("#questions").hide();
     $("form").show();
+    } else {
+      alert("Your journey awaits! Please enter your name.")
+    }
   });
 
   $("form").submit(function(event) {
@@ -49,3 +54,5 @@ $(document).ready(function() {
   });
 
 });
+
+// const color = $("input:radio[name=color]:checked").val();
