@@ -34,4 +34,17 @@ $(document).ready(function() {
     $("#results").show();
   });
 
+  $("#goodResult").click(function(event) {
+    event.preventDefault();
+    $(".showLater").hide();
+    $("#intro").hide();
+    $("#celebrate").show();
+  });
+
+  $("#badResult").click(function(event) {
+    event.preventDefault();
+    $(".showLater").hide();
+    $("#retry").text("Oh, no! Your quest went awry :( Never fear! Repeat your quest here :)");
+  });
+
 });
