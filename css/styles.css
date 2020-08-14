@@ -1,3 +1,12 @@
+body {
+  background-color:black;
+  font-family: 'Courier New', Courier, monospace;
+  color:whitesmoke ;
+}
+
+.jumbotron {
+  background-color: #72587F;
+}
 .showLater {
   display: none;
 }
@@ -6,6 +15,9 @@ h1, h2, h4, h5, p {
   text-align: center;
 }
 
+button {
+  color:black;
+}
 .leftAlign {
   text-align: left;
 }

@@ -64,12 +64,16 @@ $(document).ready(function() {
 
     if (color === "pink") {
       $("#celebrate").addClass("pink-background");
+      $(".jumbotron").addClass("pink-background");
     } else if (color === "green") {
       $("#celebrate").addClass("green-background");
+      $(".jumbotron").addClass("green-background");
     } else if (color === "blue") {
       $("#celebrate").addClass("blue-background");
+      $(".jumbotron").addClass("blue-background");
     } else {
       $("#celebrate").addClass("purple-background");
+      $(".jumbotron").addClass("purple-background");
     }
 
     $("#emerald").show();
@@ -81,6 +85,7 @@ $(document).ready(function() {
     event.preventDefault();
     $(".showLater").hide();
     $("body").removeClass();
+    $(".jumbotron").removeClass();
     $("#celebrate").removeClass();
     $("#intro").show();
   });
