@@ -40,7 +40,6 @@ $(document).ready(function() {
     const val5 = parseInt($("input:radio[name=familiar]:checked").val());
     const name = $("input#name").val();
     let languageResult = determineResult(val1, val2, val3, val4, val5);
-    console.log(val1+val2+val3+val4+val5);
     $(".name").text(name);
     $(".languageResult").text(languageResult);
     $(".showLater").hide();
@@ -52,6 +51,13 @@ $(document).ready(function() {
     event.preventDefault();
     $(".showLater").hide();
     $("#intro").hide();
+    const reward = $("input:radio[name=reward]:checked").val();
+    console.log(reward);
+    if (reward === "coins") {
+      $("#twoStacks").show();
+    } else {
+      $("#confetti").show();
+    }
     $("#celebrate").show();
   });
 
