@@ -42,7 +42,7 @@ $(document).ready(function() {
     let languageResult = determineResult(val1, val2, val3, val4, val5);
     console.log(val1+val2+val3+val4+val5);
     $(".name").text(name);
-    $("#languageResult").text(languageResult);
+    $(".languageResult").text(languageResult);
     $(".showLater").hide();
     $("#intro").hide();
     $("#results").show();
