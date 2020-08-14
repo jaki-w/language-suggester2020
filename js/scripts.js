@@ -44,6 +44,7 @@ $(document).ready(function() {
   $("#badResult").click(function(event) {
     event.preventDefault();
     $(".showLater").hide();
+    $("#intro").show();
     $("#retry").text("Oh, no! Your quest went awry :( Never fear! Repeat your quest here :)");
   });
 
