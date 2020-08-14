@@ -2,8 +2,12 @@
   display:none;
 }
 
-h1, h4, h5, p{
+h1, h2, h4, h5, p{
   text-align: center;
+}
+
+#retry {
+  background-color: aquamarine;
 }
 
 #continue1, #continue2 {
