@@ -82,18 +82,19 @@ $(document).ready(function() {
 
   $("#continue4").click(function(event) {
     event.preventDefault();
-    $(".showLater").hide();
-    $("body").removeClass();
-    $(".jumbotron").addClass("original-background");
-    $("#celebrate").removeClass();
-    $("#celebrate").hide();
-    // $("form#mainQuiz").reset();
-    $("#intro").show();
+    // $(".showLater").hide();
+    // $("body").removeClass();
+    // $(".jumbotron").addClass("original-background");
+    // $("#celebrate").removeClass();
+    // $("#celebrate").hide();
+    // // $("form#mainQuiz").reset();
+    // $("#intro").show();
+    location.reload();
   });
 
   $("#badResult").click(function(event) {
     event.preventDefault();
-    
+
       alert ("Oh, no! Your quest went awry :( Never fear! Repeat your quest here :)");
       location.reload();
   });
