@@ -89,30 +89,18 @@ button {
 }
 
 .green-background {
-  background-color: chartreuse;
+  background-color: #61DC19;
   color: black;
 }
 
 .blue-background {
-  background-color: blue;
+  background-color: #55B1E6;
   color: black;
 }
 
 .purple-background {
-  background-color: purple;
+  background-color: #9075AF;
   color: black;
-}
-
-.original-background {
-  background-color: #72587F;
-  margin-bottom: 40px;
-}
-
-#emerald {
-  display: none;
-  background-image: url("/img/emerald.png");
-  background-color: goldenrod;
-  padding: 60px;
 }
 
 #retry {
