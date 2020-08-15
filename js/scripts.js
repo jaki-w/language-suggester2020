@@ -1,4 +1,4 @@
-function determineResult(val1, val2, val3, val4, val5,) {
+function determineResult(val1, val2, val3, val4, val5) {
   const quizTotal = val1 + val2 + val3 + val4 + val5; 
   let result;
 
@@ -24,8 +24,8 @@ $(document).ready(function() {
     event.preventDefault();
     const name = $("input#name").val();
     if (name) {
-    $("#questions").hide();
-    $("form").show();
+      $("#questions").hide();
+      $("form").show();
     } else {
       alert("Your journey awaits! Please enter your name.");
     }
@@ -82,19 +82,11 @@ $(document).ready(function() {
 
   $("#continue4").click(function(event) {
     event.preventDefault();
-    // $(".showLater").hide();
-    // $("body").removeClass();
-    // $(".jumbotron").addClass("original-background");
-    // $("#celebrate").removeClass();
-    // $("#celebrate").hide();
-    // // $("form#mainQuiz").reset();
-    // $("#intro").show();
     location.reload();
   });
 
   $("#badResult").click(function(event) {
     event.preventDefault();
-
       alert ("Oh, no! Your quest went awry :( Never fear! Repeat your quest here :)");
       location.reload();
   });
