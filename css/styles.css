@@ -16,6 +16,10 @@ h1, h2, h3, h4, h5, p {
   text-align: center;
 }
 
+#intro {
+  text-align: center;
+}
+
 button {
   background-color:#ed9121;
   color:black;
@@ -45,9 +49,23 @@ button {
 
 #continue1, #continue2, #continue3, #continue4 {
   width: 30%;
-  margin-left: 33%;
-  margin-right: 33%;
   margin-top: 20px;
+}
+
+.centerButton {
+  text-align: center;
+}
+
+#keyHolder {
+  border: solid #72587F;
+  border-width: 2px;
+  padding: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: center;
+  background-color: white;
+  width: 200px;
 }
 
 #mainQuiz {
@@ -60,9 +78,9 @@ button {
 
 #resultButtons {
   width: 40%;
-  margin-left: 45%;
-  margin-right: 45%;
   margin-top: 20px;
+  margin-left: 350px;
+  text-align: center;
 }
 
 #coinImage1 {

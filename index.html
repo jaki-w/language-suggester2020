@@ -10,6 +10,12 @@
 <body>
   <div class="container">
     <h1 class="jumbotron">Programming Language Suggester</h1>
+    <div id="keyHolder">
+      <img id="key1" class="showLater" src="img/key1.jpg" alt="A piece of an ornate key.">
+      <img id="key2" class="showLater" src="img/key2.jpg" alt="A piece of an oranate key.">
+      <img id="key3" class="showLater" src="img/key3.jpg" alt="A piece of an ornate key">
+      <img src="" alt="">
+    </div>
     <div id="intro">
       <h2 id="retry"></h2>
       <h4>Curious to know which programming language suits you? </h4>
@@ -56,7 +62,9 @@
             <input type="radio" name="reward" value="coins">Coins</label>
         </div>
       </form>
-      <button id="continue2">That was weird...continue</button>
+      <div class="centerButton">
+        <button id="continue2">That was weird...continue</button>
+      </div>
     </div>
 
     <form class="showLater" id="mainQuiz">
@@ -139,8 +147,9 @@
             <input type="radio" name="familiar" value=3>Raven</label>
         </div>
       </div>
-
-      <button id="continue3" type="submit">Show me my destiny</button>
+      <div class="centerButton">
+        <button id="continue3" type="submit">Show me my destiny</button>
+      </div>
     </form>
 
     <div id="results" class="showLater">
@@ -160,9 +169,10 @@
         <a href="https://www.python.org/">Python</a><br>
         <a href="https://www.javascript.com/">JavaScript</a></p>
     </div>
-    
-    <button id="continue4" class="showLater">Start afresh!</button>
-      
+    <div class="centerButton">
+      <button id="continue4" class="showLater">Start afresh!</button>
+    </div>
+
   </div>
 </body>
 </html>
