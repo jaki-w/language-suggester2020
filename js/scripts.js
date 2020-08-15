@@ -87,15 +87,15 @@ $(document).ready(function() {
     $(".jumbotron").addClass("original-background");
     $("#celebrate").removeClass();
     $("#celebrate").hide();
+    // $("form#mainQuiz").reset();
     $("#intro").show();
   });
 
   $("#badResult").click(function(event) {
     event.preventDefault();
-    $(".jumbotron").addClass("original-background");
-    $("#intro").show();
-    $("#retry").text("Oh, no! Your quest went awry :( Never fear! Repeat your quest here :)");
-    $(".showLater").hide();
+    
+      alert ("Oh, no! Your quest went awry :( Never fear! Repeat your quest here :)");
+      location.reload();
   });
 
 });
