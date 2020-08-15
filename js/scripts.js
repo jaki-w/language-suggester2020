@@ -84,8 +84,9 @@ $(document).ready(function() {
     event.preventDefault();
     $(".showLater").hide();
     $("body").removeClass();
-    $(".jumbotron").removeClass();
+    $(".jumbotron").addClass("original-background");
     $("#celebrate").removeClass();
+    $("#celebrate").hide();
     $("#intro").show();
   });
 
