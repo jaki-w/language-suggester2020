@@ -18,6 +18,7 @@ $(document).ready(function() {
     event.preventDefault();
     $("#intro").hide();
     $("#questions").show();
+
   });
 
   $("#continue2").click(function(event) {

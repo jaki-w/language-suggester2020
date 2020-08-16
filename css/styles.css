@@ -49,23 +49,11 @@ button {
 
 #continue1, #continue2, #continue3, #continue4 {
   width: 30%;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .centerButton {
   text-align: center;
-}
-
-#keyHolder {
-  border: solid #72587F;
-  border-width: 2px;
-  padding: 20px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: center;
-  background-color: white;
-  width: 200px;
 }
 
 #mainQuiz {
