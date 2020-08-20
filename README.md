@@ -31,9 +31,13 @@ _Email jaki.widby@gmail.com with questions or concerns_
 
 ## Technologies Used
 
+* _JavaScript_
 * _HTML_
 * _CSS_
 * _Bootstrap v3.3.7_
 * _jQuery v3.5.1_
 
+## License
+
+This project is licensed under the MIT license
 Copyright (c) 2020 **_Jaki Widby_**
